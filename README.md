@@ -2,10 +2,10 @@
 
 ## Usage
 
-Simply include the `panic_button.js` script anywhere in your code.
+Simply include a link to the `panic.min.js` script anywhere in your code.
 
 ```html
-<script src="https://domain-goes-here.com/panic.min.js"></script>
+<script src="https://cdn.rawgit.com/StudioThick/panic-button/master/panic.min.js"></script>
 ```
 
 To manually define where the panic button will attach, simply create an element
@@ -40,7 +40,7 @@ panic_config = {
     text: 'Protect yourself online.',
 
     // the link in the banner -- text and target
-    link_site: 'http://help',
+    link_site: 'https://www.domesticshelters.org/safe-surfing',
     link_text: 'Learn how to hide your browsing history.',
 
     // the text on the panic button itself (&times; used for 'x' button)
