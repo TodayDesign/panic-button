@@ -1,0 +1,24 @@
+{
+  "name": "panic-button",
+  "version": "1.0.0",
+  "description": "",
+  "main": "panic.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "uglifyjs panic.js --compress -o panic.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/studiothick/panic-button.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/studiothick/panic-button/issues"
+  },
+  "homepage": "https://github.com/studiothick/panic-button#readme",
+  "devDependencies": {
+    "uglify-js": "^2.6.2"
+  }
+}
