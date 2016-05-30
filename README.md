@@ -14,7 +14,7 @@ child of `<body>`.
 
 ## Styling
 
-Include `panic_style.css` or manually define styling for the following
+Include `panic.css` or manually define styling for the following
 heirarchy:
 
 ```html
