@@ -14,8 +14,8 @@ child of `<body>`.
 
 ## Styling
 
-Include `panic.css` or manually define styling for the following
-heirarchy:
+Include `panic.css` or define your own styling for the following
+hierarchy:
 
 ```html
 <div class="panic_container" id="panic">
