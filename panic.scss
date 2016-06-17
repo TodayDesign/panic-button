@@ -24,6 +24,7 @@
         text-decoration: underline;
 
         &:hover,
+        &:focus,
         &:active {
             color: #444;
         }
@@ -44,6 +45,7 @@
         }
 
         &:hover,
+        &:focus,
         &:active {
             color: #fff;
             background-color: darken(#ef0834, 5%);
