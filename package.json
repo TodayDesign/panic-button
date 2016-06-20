@@ -2,10 +2,10 @@
   "name": "panic-button",
   "version": "1.0.0",
   "description": "",
-  "main": "panic.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "uglifyjs panic.js --compress -o panic.min.js"
+    "build": "uglifyjs index.js --compress -o panic.min.js"
   },
   "repository": {
     "type": "git",

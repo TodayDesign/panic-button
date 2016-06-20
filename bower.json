@@ -1,0 +1,17 @@
+{
+  "name": "panic-button",
+  "description": "A script to add a banner & a quick-exit button to the top of a sensitive web page",
+  "main": "panic.min.js",
+  "authors": [
+    "tom.mclean@studiothick.com"
+  ],
+  "license": "ISC",
+  "homepage": "http://github.com/studiothick/panic-button",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
