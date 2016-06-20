@@ -42,6 +42,10 @@
         hotkey: 27
     }, panic_config);
 
+    var redirect = function() {
+        window.location.href = config.escape_site;
+    };
+
     // panic implementation
     window.panic = function() {
         // wipe the whole DOM first in case of slow internet connection
@@ -49,7 +53,15 @@
         while(html.firstChild) { html.removeChild(html.firstChild); }
 
         // then redirect to a non-sensitive site
-        window.location.href = config.escape_site;
+        redirect();
+
+        // Redirect again after a tiny delay -- on Firefox and IE, the
+        // escape hotkey will also be detected as a "cancel" command and
+        // will terminate the redirect.
+        // Holding escape will call panic again, so holding down escape will
+        // just continually cancel until it's released, at which point it'll
+        // successfully redirect.
+        setTimeout(redirect, 20);
 
         // disable default event handling
         return false;
