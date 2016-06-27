@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "version": "npm run build && node update-readme.js && git add dist && git add README.md",
     "build": "uglifyjs sources/index.js --compress -o dist/panic.min.js"
   },
   "repository": {
