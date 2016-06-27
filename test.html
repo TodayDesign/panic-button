@@ -1,11 +1,22 @@
 <!doctype html>
 <html>
     <head>
-        <link rel="stylesheet" href="panic.css" />
+        <title>Sensitive Site</title>
     </head>
     <body>
+        <!-- begin panic button -->
+        <div id="panic-container" class="panic-button">
+            <span class="panic-button__text">Protect yourself online.</span>
+            <a class="panic-button__link" href="https://www.domesticshelters.org/safe-surfing">Learn how to hide your browsing history.</a>
+            <a href="https://www.google.com" id="panic-button" class="panic-button__button">
+                <span class="panic-button__icon">&times;</span>
+                Quick exit (ESC)
+            </a>
+        </div>
+        <link rel="stylesheet" property="stylesheet" href="panic.css" />
+        <script async src="index.js"></script>
+        <!-- end panic button -->
         <h1>Test page</h1>
         <p>Test content.</p>
     </body>
-    <script async src="index.js"></script>
 </html>
