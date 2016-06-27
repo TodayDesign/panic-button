@@ -20,8 +20,8 @@ Simply paste the following snippet after the `<body>` tag in your html.
         Quick exit (ESC)
     </a>
 </div>
-<link rel="stylesheet" property="stylesheet" href="https://cdn.rawgit.com/studiothick/panic-button/v1.0.3/panic.css" />
-<script async src="https://cdn.rawgit.com/studiothick/panic-button/v1.0.3/panic.min.js"></script>
+<link rel="stylesheet" property="stylesheet" href="https://cdn.rawgit.com/studiothick/panic-button/v1.0.4/dist/panic.css" />
+<script async src="https://cdn.rawgit.com/studiothick/panic-button/v1.0.4/dist/panic.min.js"></script>
 <!-- end panic button -->
 ```
 
