@@ -5,7 +5,7 @@ var data = require('./package.json');
 var version = 'v' + data.version;
 
 // determine CDN urls
-var rawgit = 'https://cdn.rawgit.com/studiothick/panic-button/' + version + '/';
+var rawgit = 'https://cdn.rawgit.com/studiothick/panic-button/' + version + '/dist/';
 var panic = rawgit + 'panic.min.js';
 var style = rawgit + 'panic.css';
 
