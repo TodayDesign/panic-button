@@ -3,11 +3,11 @@
 ## About
 
 `panic-button` is a module for adding a quick exit button and banner to a site
-that contains sensitive content, allowing users to extremely quickly hide what
-they were looking at (for example, information related to domestic abuse)
+that contains sensitive content (for example, information related to domestic 
+abuse), allowing users to extremely quickly hide what they were looking at 
 even in the case of a slow or disconnected internet connection.
 
-![Screenshot of Women Talk Money website with panic button banner at the top](https://cdn-images-1.medium.com/max/800/1*pBoBFQLRcQNkXVpULHUblg.png)
+![Screenshot of Women Talk Money website with panic button banner at the top](https://cdn-images-1.medium.com/max/800/1*bj3htsLntKoH-orjXG1ZNw.jpeg)
 
 If you’re creating a site that has vulnerable people as any proportion of its 
 target audience, consider incorporating a quick exit — all it takes is pasting 
