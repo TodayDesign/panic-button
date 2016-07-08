@@ -3,8 +3,14 @@
     // panic implementation
     window.panic = function(site, e) {
         // wipe the whole DOM first in case of slow internet connection
-        var body = document.getElementsByTagName('body')[0];
-        while(body.firstChild) { body.removeChild(body.firstChild); }
+        var html = document.getElementsByTagName('html')[0];
+        while(html.firstChild) { html.removeChild(html.firstChild); }
+
+        // remove html style attribute -- clearing the DOM will not reset
+        // a background color on this element, so it needs to be done in a
+        // separate step
+        html.removeAttribute('style');
+
 
         // remove as much info from URL as possible
         if(window.history) {
