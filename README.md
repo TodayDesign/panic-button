@@ -25,14 +25,15 @@ Simply paste the following snippet after the `<body>` tag in your html.
         Learn how to hide your browsing history.
     </a>
     <a id="panic-button" class="panic-button__button"
+        title="Google"
         href="https://www.google.com" 
         >
         <span class="panic-button__icon">&times;</span>
         Quick exit (ESC)
     </a>
 </div>
-<link rel="stylesheet" property="stylesheet" href="https://cdn.rawgit.com/studiothick/panic-button/v1.0.4/dist/panic.css" />
-<script async src="https://cdn.rawgit.com/studiothick/panic-button/v1.0.4/dist/panic.min.js"></script>
+<link rel="stylesheet" property="stylesheet" href="https://cdn.rawgit.com/studiothick/panic-button/v1.1.0/dist/panic.css" />
+<script async src="https://cdn.rawgit.com/studiothick/panic-button/v1.1.0/dist/panic.min.js"></script>
 <!-- end panic button -->
 ```
 
