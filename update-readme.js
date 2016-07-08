@@ -18,7 +18,7 @@ var snippet = ('' + fs.readFileSync('sources/snippet.html'))
 
 // place snippet into readme
 var readme = '' + fs.readFileSync('readme.md');
-var comment_re = /<!--[\w ]+-->/g;
+var comment_re = /<!--[\w ]+ panic button -->/g;
 var chunks = readme.split(comment_re);
 
 if(chunks.length === 3) {
