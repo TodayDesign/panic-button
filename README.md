@@ -7,6 +7,8 @@ that contains sensitive content, allowing users to extremely quickly hide what
 they were looking at (for example, information related to domestic abuse)
 even in the case of a slow or disconnected internet connection.
 
+![Screenshot of Women Talk Money website with panic button banner at the top](https://cdn-images-1.medium.com/max/800/1*pBoBFQLRcQNkXVpULHUblg.png)
+
 If you’re creating a site that has vulnerable people as any proportion of its 
 target audience, consider incorporating a quick exit — all it takes is pasting 
 the code below at the top of the page.
