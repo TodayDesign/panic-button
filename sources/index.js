@@ -1,25 +1,53 @@
 (function() {
 
+    function clearAttrs(elem) {
+        while(elem.attributes.length > 0) {
+            elem.removeAttribute(elem.attributes[0].name);
+        }
+    }
+
+    function clearChildren(elem) {
+        while(elem.firstChild) { 
+            elem.removeChild(elem.firstChild) 
+        }
+    }
+
     // panic implementation
     window.panic = function(site, title) {
         // wipe the whole DOM first in case of slow internet connection
         var html = document.getElementsByTagName('html')[0];
-        while(html.firstChild) { html.removeChild(html.firstChild); }
+        clearAttrs(html);
 
-        // remove html style attribute -- clearing the DOM will not reset
-        // a background color on this element, so it needs to be done in a
-        // separate step
-        html.removeAttribute('style');
+        var bodies = document.getElementsByTagName('body');
+        for(var i = 0; i < bodies.length; ++i) {
+            var b = bodies[i];
+            clearChildren(b);
+            clearAttrs(b);
+        }
 
-        // replace the title
-        html.innerHTML = '<head><title>' + title + '</title></head>';
+        var heads = document.getElementsByTagName('head');
+        for(var i = 0; i < heads.length; ++i) {
+            var h = heads[i];
+            clearChildren(h);
+            clearAttrs(h);
+        }
+
+        if(heads.length > 0) {
+            var t = document.createElement('title');
+            t.innerText = title;
+            heads[0].appendChild(t);
+        }
 
         // then redirect to a non-sensitive site
         window.location.href = site;
 
         // remove as much info from URL as possible
         if(window.history) {
-            window.history.replaceState({}, '', '/');
+            try {
+                window.history.replaceState({}, '', '/');
+            } catch(e) {
+                
+            }
         }
 
         // disable default event handling
